@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title= pageTitle
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1 Add a Video Game Character
+    a(href='/') Return to the homepage
+    .form-wrapper
+      form(action='/update-cobj', method='POST')
+        label(for='character_name') Name
+        input#character_name(type='text', name='character_name', required)
+
+        label(for='game_title') Game Title
+        input#game_title(type='text', name='game_title', required)
+
+        label(for='special_ability') Special Ability
+        input#special_ability(type='text', name='special_ability')
+
+        input(type='submit', value='Add Character')
