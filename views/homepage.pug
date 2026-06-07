@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title= title
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1 Video Game Characters
+    a(href='/update-cobj') Add to this table
+    table
+      thead
+        tr
+          th Name
+          th Game Title
+          th Special Ability
+      tbody
+        each obj in objects
+          tr
+            td= obj.properties.character_name || '—'
+            td= obj.properties.game_title || '—'
+            td= obj.properties.special_ability || '—'
