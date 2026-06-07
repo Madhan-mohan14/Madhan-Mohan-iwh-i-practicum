@@ -6,6 +6,13 @@ To read the full directions, please go to the [practicum instructions](https://a
 
 **HubSpot developer test account contacts list:** https://app.hubspot.com/contacts/246423445/objects/0-1/views/all/list
 
+## How to run locally
+1. Clone this repo
+2. Run `npm install`
+3. Create a `.env` file with `ACCESS_TOKEN=your_private_app_token`
+4. Run `node index.js`
+5. Open http://localhost:3000
+
 ___
 ## Tips:
 - Commit to your repository often. Even if you make small tweaks to your code, it’s best to be committing to your repository frequently.
@@ -13,6 +20,13 @@ ___
 - Please create a test account and include your private app access token in your repo.
 - Ensure you re-merge any working branches into the main branch.
 - DO NOT ADD YOUR PRIVATE APP TOKEN TO YOUR REPOSITORY. 
+
+## Custom Properties Used
+| Internal Name | Label | Type |
+|---|---|---|
+| `character_name` | Name | Single-line text |
+| `game_title` | Game Title | Single-line text |
+| `special_ability` | Special Ability | Single-line text |
 
 ## Pre-requisites:
 - Using [Node](https://nodejs.org/en/download) and node packages
